@@ -1,0 +1,29 @@
+{
+  "type":"struct",
+  "fields":[
+    {
+      "name":"id",
+      "nullable":true,
+      "type":"integer",
+      "metadata":{
+      }
+    },
+    {
+      "name":"name",
+      "nullable":true,
+      "type":"string",
+       "metadata":{
+         "alias" : "full_name",
+         "function" : "upper(concat(name, ' Matta'))"
+       }
+    },
+    {
+      "name":"city",
+      "nullable":true,
+      "type":"string",
+       "metadata":{
+         "alias" : "Location",
+         "function" : "lpad(city, 20, '0')"
+       }
+    }]
+}
