@@ -40,3 +40,6 @@ Schema metadata can have sql functions defined, those will be applied to respeti
     }]
 }
 ```
+
+### Build & Test
+py setup.py bdist_egg
